@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.home {
+    height: 100vh;
+}
+.nav-bar {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.li-ito {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background: transparent; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+}
+.a-1{
+    text-decoration: none;
+    color: white;
+}
+
+.pot {
+    color: rgb(192, 182, 182);
+}
+.pot:hover {
+    color: black;
+}
+
+.navigation-bar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar .tukpot-logo .a-1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.navigation-bar .link-ito {
+    display: flex;
+    gap: 2rem;
+    font-size: larger;
+    padding: 3px;  
+}
+.a-1:hover {
+    color: black;
+}
+.navigation-bar .li-ito:hover {
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background: rgb(109, 221, 193); 
+    justify-content: center;
+    color: black; 
+    align-items: center; 
+    border-radius: 5px;
+}
+
+.act-btnto {
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background: transparent; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+}
+.act-btnto:hover{
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background: #77ccdb; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+}
+
+.navigation-bar .toggle_btntoha {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btnto {
+    padding-left: 28px;
+    padding-right: 28px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background: #272635; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    color: white; 
+    font-size: 17px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 24px; 
+    letter-spacing: 0.84px; 
+    word-wrap: break-word;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.action_btnto:hover {
+    scale: 1.05;
+    color:white
+}
+
+ 
+.h1to {
+    margin-top: 40px;
+    font-size: 80px;
+    padding: 30px;
+    padding-top: 150px;
+}
+.p1to {
+    margin: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.contact-btn {
+    padding-left: 28px;
+    padding-right: 28px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background: #272635; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    color: white; 
+    font-size: 17px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 24px; 
+    letter-spacing: 0.84px; 
+    word-wrap: break-word;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    scale: 1.05;
+}
+
+.works-btn {
+    padding-left: 28px;
+    padding-right: 28px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background: white; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    color: black; 
+    font-size: 17px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 24px; 
+    letter-spacing: 0.84px; 
+    word-wrap: break-word;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.works-btn:hover {
+    scale: 1.05;
+}
+/*DROPDOWN MENU*/
+
+.dropdown_menuito {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menuito.open{
+    height: 430px;
+}
+
+.dropdown_menuito .li-ito {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menuito .action_btnto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    
+.h1ulit{
+    font-size: 50px;
+}
+
+.faf {
+    color: gray;
+    font-size: 45px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.row .column {
+    flex: 30%;
+    width: auto;
+    overflow: hidden;
+    height: 100px;
+}
+.row .column img {
+    width: 100px;
+    height: 100px;
+}
+
+.const {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.textblock .title {
+    text-align: center;
+
+}
+.const .textblock {
+    position: absolute;
+            top: 16px;
+}
+
+
+.footerto{
+    background: #272635; 
+    color: white;
+}
+ 
+.imidyis {
+    max-width: 100%;
+  height: 100vh; 
+}
+.hays{
+    margin: 25px;
+    margin-top: 70px;
+} 
+.grid-photo {
+    border: 1px solid white;
+    margin: 7px;
+    border-radius: 7px;
+}
+
+.text-webkit {
+    margin-top: 18%;
+    font-size: 50px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+.stary{
+    font-size: 40px;
+}
+
+.mar {
+    margin-left: 15px;
+}
+
+.phototo { 
+    width: 100vh;
+    height: 40vh;
+}
+.trisom {
+    position: absolute;
+}
+.but {
+    margin-left: 480px;
+}
+.bgg {
+    background: #272635; 
+}
+.rate{
+    display: inline-block;
+}
+ .rate h1{
+    font-weight: 700; 
+    line-height: 59px;
+    display: inline-flex;
+}
+ .rate h1 span{
+    font-size: 18px; 
+    line-height: 27px;
+}
+.rate h3{
+    font-weight: 700; 
+    line-height: 29px;
+}
+li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.chevi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.butuun {
+    font-size: 20px;
+} 
+.choosy {
+    height: 90vh;
+    border: 1px solid transparent;
+}
+
+/*RESPONSIVE */
+
+@media (max-width: 992px) {
+    .navigation-bar .link-ito,
+    .navigation-bar .action_btnto,
+    .navigation-bar .act-btnto {
+        display: none;
+    }
+
+    .navigation-bar .toggle_btntoha {
+        display: block;
+    }
+
+    .dropdown_menuito {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menuito {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media screen and (max-width:768px){
+    .welcome {
+        margin-top: 100px;
+    }
+    header{
+        width:56vh;
+    }
+    .h1to {
+        font-size: 45px;
+        padding-left: -10px;
+        margin-left: 5px;
+    }
+    .home {
+        height: 110vh;
+        width:50vh;
+    }
+    .text-webkit{
+    font-size: 30px; 
+    -webkit-text-stroke-width: 2px;
+    }
+    
+.imidyis {
+    max-width: 100%; 
+    height: 60vh;
+}
+.hays{
+    margin: 5px;
+    margin-top: 20px;
+} 
+.stary {
+    font-size: 23px;
+} 
+.h1ulit{
+    font-size: 35px;
+}
+.faf { 
+    font-size:25px; 
+}
+.h1to {
+    margin-top: 20px;
+    font-size: 40px;
+    padding: 20px;
+    padding-top:  100px;
+}
+.phototo { 
+    width: 40vh;
+    height: 40vh;
+}
+.trisom {
+    position: relative;
+}
+iframe {
+    width: auto;
+}
+.butuun {
+    font-size: 15px;
+}
+.choosy {
+    height: 210vh; 
+    width:57vh;
+} 
+.but {
+    margin-left: 5px; 
+}
+}
